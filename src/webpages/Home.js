@@ -13,61 +13,55 @@ export const Greeting = () => {
 export const NewGreeting = () => {
     const { user, isAuthenticated } = useAuth0();
     return (
-        isAuthenticated &&(
+        isAuthenticated && (
             <div>
                 <PageTitleText>Welcome Back {user.name}! </PageTitleText>
             </div>
-            )
+        )
     )
 }
 
 export const Home = () => (
     <div>
         <NewGreeting />
-        <Greeting />
         <Indent>
             <HeaderText>About Me :</HeaderText>
             <Indent>
                 <SmallText>
                     My name is Dylan Poll, I am a software developer who is always looking to learn.
-                    {'\n'}My current skills include :
-                </SmallText>
-            <Indent>
-                <SmallText>
-                    * C Programming Language
-                    {'\n'}* C++ Programming Language
-                    {'\n'}* C# Programming Language
-                    {'\n'}* Java Programming Language
-                    {'\n'}* Js+Node Programming Language
-                    {'\n'}* Python Programming Language
-                </SmallText>
-            </Indent>
-                <SmallText>
-                    {'\n'}My skill sets include :
-                </SmallText>
+                    {'\n'}Some of my current skills include :
                 <Indent>
-                    <SmallText>
-                        * Web Development
-                        {'\n'}* Embedded Systems and general IOT
-                        {'\n'}* Cloud Networking
-                        {'\n'}* Server Deployment
-                        {'\n'}* Software development
-                        {'\n'}* Full Stack work
-                        {'\n'}* CAD model development
-                    </SmallText>
-                </Indent>
+                    <ul>
+                        <span><li> Embedded Systems and general IOT</li></span>
+                        <span><li> Cloud Networking</li></span>
+                        <span><li> Server Deployment</li></span>
+                        <span><li> Software development</li></span>
+                        <span><li> Full Stack work</li></span>
+                        <span><li> CAD model development</li></span>
+                        <span><li> Web Development</li></span>  
+                        <span><li> C++ Programming Language </li></span>  
+                        <span><li> C Programming Language </li></span> 
+                        <span><li> C# Programming Language </li></span> 
+                        <span><li> ava Programming Language   </li></span> 
+                        <span><li> Js+Node Programming Language </li></span> 
+                        <span><li> Python Programming Language   </li></span>   
+                    </ul>                      
+                    </Indent>
+                </SmallText>
             </Indent>
         </Indent>
 
         <Indent>
             <HeaderText>Contact Me :{'\n'}</HeaderText>
-                <Indent>
-                    <SmallText>
-                        E-Mail : <a href="DylanManPoll@gmail.com">DylanManPoll@gmail.com</a>
-                        {'\n'}GitHub : <a href="https://github.com/dylanpoll"> https://github.com/dylanpoll </a>
-                        {'\n'}LinkdIn : <a href="https://www.linkedin.com/in/dylan-poll-4a324a1a2/">https://www.linkedin.com/in/dylan-poll-4a324a1a2/</a>
-                    </SmallText>
-                </Indent>
+            <Indent><Indent>
+                <SmallText>
+                    <li><span> E-Mail : <a href="DylanManPoll@gmail.com">DylanManPoll@gmail.com</a>  </span></li>
+                    <li><span> GitHub : <a href="https://github.com/dylanpoll">github.com/dylanpoll </a> </span></li>
+                    <li><span> LinkdIn : <a href="https://www.linkedin.com/in/dylanpoll">linkedin.com/in/dylanpoll</a> </span></li>
+                    <li><span> Orlando Code Cave Discord Server : <a href="https://discord.gg/kRCTTRVt">https://discord.gg/kRCTTRVt</a> </span></li>
+                    <li><span> Discord ID : DevDylan#9707</span></li>
+                </SmallText>
+            </Indent></Indent>
         </Indent>
     </div>
 );
