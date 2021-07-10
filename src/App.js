@@ -8,7 +8,6 @@ import { NavigationBar } from "./components/NavigationBar";
 import { Jumbotron } from "./components/Jumbotron";
 import {Profile} from "./webpages/Profile";
 
-//"start": "PORT=3006 react-scripts start" for linux
 class App extends Component {
   render() {
     return (

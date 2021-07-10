@@ -32,6 +32,8 @@ export const Home = () => (
                     {'\n'}Some of my current skills include :
                 <Indent>
                     <ul>
+                        <span><li> Windows and Linux Systems </li></span>
+                        <span><li> Board Work, Break Fix and general IT </li></span>
                         <span><li> Embedded Systems and general IOT</li></span>
                         <span><li> Cloud Networking</li></span>
                         <span><li> Server Deployment</li></span>
